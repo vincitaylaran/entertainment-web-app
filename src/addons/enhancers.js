@@ -1,4 +1,4 @@
-import store from '../store'
+import store from '../app/store'
 
 export const enhancedDispatch = (createStore) => {
   return (rootReducer, preloadedState, enhancers) => {

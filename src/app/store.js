@@ -1,9 +1,9 @@
 import { createStore, compose, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import rootReducer from './reducer'
-import catalogue from './data.json'
-import { enhancedDispatch, enhancedGetState } from './addons/enhancers'
-import { print1, print2, print3 } from './addons/middleware'
+import rootReducer from './rootReducer'
+import catalogue from '../data.json'
+import { enhancedDispatch, enhancedGetState } from '../addons/enhancers'
+import { print1, print2, print3 } from '../addons/middleware'
 
 const preloadedState = {
   // Sets initial state for bookmarks to be an empty array.
