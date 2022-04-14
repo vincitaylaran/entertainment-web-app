@@ -1,6 +1,6 @@
 export default function catalogueReducer(state = [], action) {
   switch (action.type) {
-    case 'search/catalogueSearched': {
+    case 'catalogue/catalogueSearched': {
       // Sample search query: "Beyond Earth"
       // Only searched by title
       // Will work on full search capabilities later
