@@ -1,0 +1,27 @@
+.Bookmark {
+  background: var(--color-dark-blue);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  opacity: 0.5;
+
+  /* rgba(16, 20, 30, 0.5) is equivalent to having the hex value of dark blue and 
+  an opacity of 0.5. The difference is that using rgba() does not affect the opacity
+  of child elements. */
+  background: rgba(16, 20, 30, 0.5);
+}
+
+.Bookmark:hover {
+  background: var(--color-white);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.Bookmark:hover path {
+  stroke: var(--color-dark-blue);
+}
+
+.Bookmark-icon {
+  width: 40%;
+  height: 100%;
+}

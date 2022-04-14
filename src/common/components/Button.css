@@ -1,0 +1,16 @@
+.Button {
+  background: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  font-family: var(--font-family);
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background: var(--color-white);
+  color: var(--color-semi-dark-blue);
+}

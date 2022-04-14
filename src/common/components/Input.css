@@ -1,0 +1,35 @@
+.Input {
+  border: none;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  background: none;
+  border-bottom: 2px solid var(--color-greyish-blue);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  caret-color: var(--color-red);
+}
+
+.Input::-webkit-input-placeholder {
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+.Input:-ms-input-placeholder {
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+.Input:-moz-placeholder {
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+.Input::-moz-placeholder {
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+.Input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--color-white);
+}

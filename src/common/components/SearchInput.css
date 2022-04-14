@@ -1,0 +1,36 @@
+.SearchInput {
+  display: flex;
+  /* align-items: center; */
+}
+
+.SearchInput-icon {
+  margin-right: 28px;
+}
+.SearchInput-field {
+  padding-left: 0;
+  width: 100%;
+  font-size: 24px;
+}
+.SearchInput-field:focus {
+  border-bottom: 2px solid var(--color-greyish-blue);
+}
+
+.SearchInput-field::-webkit-input-placeholder {
+  font-family: var(--font-family);
+  font-size: 24px;
+}
+
+.SearchInput-field:-ms-input-placeholder {
+  font-family: var(--font-family);
+  font-size: 24px;
+}
+
+.SearchInput-field:-moz-placeholder {
+  font-family: var(--font-family);
+  font-size: 24px;
+}
+
+.SearchInput-field::-moz-placeholder {
+  font-family: var(--font-family);
+  font-size: 24px;
+}
