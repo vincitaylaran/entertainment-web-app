@@ -1,7 +1,7 @@
 import React from 'react'
 import Input from './Input'
 import './SearchInput.css'
-import { ReactComponent as SearchIcon } from '../../assets/icon-search.svg'
+import { ReactComponent as SearchIcon } from '../../svgs/icon-search.svg'
 
 function SearchInput({ className }) {
   return (
