@@ -1,0 +1,17 @@
+.CatalogueItem {
+  background: none;
+  color: var(--color-white);
+}
+
+.CatalogueItemImage-container {
+  position: relative;
+}
+.CatalogueItemImage-main {
+  width: 100%;
+  border-radius: inherit;
+}
+.CatalogueItemImage-bookmark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
