@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: Outfit;
-  src: url('./assets/fonts/Outfit-VariableFont_wght.ttf');
+  src: url('../public/assets/fonts/Outfit-VariableFont_wght.ttf');
 }
 
 body {
