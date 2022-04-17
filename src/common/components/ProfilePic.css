@@ -1,0 +1,4 @@
+.ProfilePic {
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+}

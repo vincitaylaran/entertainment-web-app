@@ -1,0 +1,26 @@
+.Nav {
+  background: var(--color-semi-dark-blue);
+  max-height: 90vh;
+  width: 96px;
+  border-radius: 20px;
+  padding: 35px 32px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+
+  /* Set value equal to padding of layout. */
+  top: 32px;
+}
+.Nav-logo {
+  margin-bottom: 75px;
+}
+.Nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: auto;
+}
