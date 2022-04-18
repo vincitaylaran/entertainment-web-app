@@ -1,6 +1,8 @@
 .Layout {
+  --layout-padding: 32px;
+
   min-height: 100vh;
-  padding: 32px;
+  padding: var(--layout-padding);
   display: flex;
   gap: 36px;
 }
