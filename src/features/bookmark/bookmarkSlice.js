@@ -1,12 +1,20 @@
-export default function bookmarksReducer(state = [], action) {
-  switch (action.type) {
-    case 'bookmarks/bookmarkAdded': {
-      return [...state, action.payload]
-    }
-    case 'bookmarks/bookmarkRemoved': {
+import { createSlice } from '@reduxjs/toolkit'
+
+const initialState = []
+
+const bookmarksSlice = createSlice({
+  name: 'bookmarks',
+  initialState,
+  reducers: {
+    bookmarkAdded(state, action) {
+      state.push(action.payload)
+    },
+    bookmarkRemoved(state, action) {
       return state.filter((item) => item.title !== action.payload)
-    }
-    default:
-      return state
-  }
-}
+    },
+  },
+})
+
+export const { bookmarkAdded, bookmarkRemoved } = bookmarksSlice.actions
+
+export default bookmarksSlice.reducer
