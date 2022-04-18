@@ -1,0 +1,18 @@
+.CatalogueItems {
+}
+.CatalogueItems-section-name {
+}
+.CatalogueItems-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 32px;
+  column-gap: 40px;
+}
+.CatalogueItems-grid--trending {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
