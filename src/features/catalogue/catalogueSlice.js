@@ -8,11 +8,19 @@ const catalogueSlice = createSlice({
   initialState,
   reducers: {
     catalogueSearched(state, action) {
-      return [...state].filter((item) => item.title === action.payload)
+      const { payload } = action
+      const keywords = payload.split(' ')
+
+      return state.filter((item) => {
+        const { title } = item
+        return keywords.some((keyword) =>
+          title.toLowerCase().includes(keyword.toLowerCase())
+        )
+      })
     },
   },
 })
 
 export const { catalogueSearched } = catalogueSlice.actions
 
-export default catalogueSlice
+export default catalogueSlice.reducer
