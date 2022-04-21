@@ -1,2 +1,9 @@
 .Catalogue {
+  padding-top: var(--layout-padding);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - var(--nav-width) - var(--layout-gap));
+}
+.Catalogue-search-input {
+  margin-bottom: 34px;
 }
