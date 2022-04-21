@@ -11,8 +11,10 @@
 .CatalogueItems-grid--trending {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  overflow-y: hidden;
+  grid-auto-columns: 470px;
+  gap: var(--layout-gap);
   overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
+  border-radius: 8px;
 }
