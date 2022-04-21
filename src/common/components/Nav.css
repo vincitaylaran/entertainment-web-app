@@ -1,7 +1,7 @@
 .Nav {
   background: var(--color-semi-dark-blue);
   max-height: 90vh;
-  width: 96px;
+  width: var(--nav-width);
   border-radius: 20px;
   padding: 35px 32px 32px;
   box-sizing: border-box;
