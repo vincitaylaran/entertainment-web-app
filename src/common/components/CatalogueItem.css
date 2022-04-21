@@ -11,12 +11,16 @@
   width: 100%;
   border-radius: 8px;
 }
+.CatalogueItemImage-main--trending {
+  width: 100%;
+  border-radius: 8px;
+}
 .CatalogueItemImage-bookmark {
   position: absolute;
   top: 16px;
   right: 16px;
 }
-.CatalogueItemInfo-container.trending {
+.CatalogueItemInfo-container--trending {
   position: absolute;
   bottom: 24px;
   left: 24px;
@@ -29,11 +33,12 @@
   margin: 0 8px;
 }
 
-.CatalogueItemInfo-container.trending .CatalogueItemInfo-sub {
+.CatalogueItemInfo-container--trending .CatalogueItemInfo-sub {
   font-size: 15px;
 }
 
-.CatalogueItemInfo-container:not(.trending) .CatalogueItemInfo-sub {
+.CatalogueItemInfo-container:not(.CatalogueItemInfo-container--trending)
+  .CatalogueItemInfo-sub {
   font-size: 13px;
   padding-top: 8px;
 }

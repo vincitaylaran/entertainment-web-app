@@ -41,7 +41,7 @@ function CatalogueItemImage(props) {
   return (
     <div className='CatalogueItemImage-container'>
       <img
-        className='CatalogueItemImage-main'
+        className={`CatalogueItemImage-main${isTrending ? '--trending' : ''}`}
         src={isTrending ? thumbnail.trending.large : thumbnail.regular.large}
         alt={title}
       />
@@ -53,7 +53,7 @@ function CatalogueItemImage(props) {
 function CatalogueItemInfo({ title, year, category, rating, isTrending }) {
   return (
     <div
-      className={`CatalogueItemInfo-container ${isTrending ? 'trending' : ''}`}
+      className={`CatalogueItemInfo-container${isTrending ? '--trending' : ''}`}
     >
       <div className='CatalogueItemInfo-sub'>
         <span className='CatalogueItemInfo-year'>{year}</span>
