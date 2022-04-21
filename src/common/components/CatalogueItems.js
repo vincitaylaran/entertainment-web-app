@@ -20,7 +20,7 @@ function CatalogueItems({ catalogue, isTrending }) {
   const filteredCatalogue = generateCatalogue(catalogue, isTrending)
 
   return (
-    <div className='CatalogueItems'>
+    <div className={`CatalogueItems${isTrending ? '--trending' : ''}`}>
       <h1 className='CatalogueItems-section-name'>Recommended for you</h1>
       <div className={`CatalogueItems-grid${isTrending ? '--trending' : ''}`}>
         {filteredCatalogue.map((item) => (

@@ -7,4 +7,5 @@
   padding: var(--layout-padding);
   display: flex;
   gap: var(--layout-gap);
+  overflow-x: hidden;
 }

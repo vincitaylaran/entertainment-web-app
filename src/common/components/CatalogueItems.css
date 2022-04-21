@@ -1,7 +1,14 @@
 .CatalogueItems {
 }
+
+/* Make trending items "ignore" padding of layout. */
+.CatalogueItems--trending {
+  width: 103%;
+}
+
 .CatalogueItems-section-name {
 }
+
 .CatalogueItems-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -17,4 +24,5 @@
   overflow-y: hidden;
   white-space: nowrap;
   border-radius: 8px;
+  padding-right: var(--layout-gap);
 }

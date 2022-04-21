@@ -9,10 +9,6 @@
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-
-  /* Set value equal to padding of Layout. */
-  /* Since Nav is a child of Layout, it will know what --layout-padding is. */
-  top: var(--layout-padding);
 }
 .Nav-logo {
   margin-bottom: 75px;
