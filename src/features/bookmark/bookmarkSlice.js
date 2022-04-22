@@ -5,6 +5,9 @@ const initialState = []
 const bookmarksSlice = createSlice({
   name: 'bookmarks',
   initialState,
+
+  // TODO: each catalogue item has an "isBookmarked" property.
+  // Please make use of that property when writing the reducers.
   reducers: {
     bookmarkAdded(state, action) {
       state.push(action.payload)
